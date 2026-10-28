@@ -1,0 +1,6 @@
+Table Database
+
+> CREATE DATABASE 'any name'
+
+
+CREATE TABLE `db_vehicle`.`table_car` (`id` INT NOT NULL AUTO_INCREMENT , `numb_doors` INT NOT NULL , `trunk_size` DOUBLE NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
