@@ -3,4 +3,21 @@ Table Database
 > CREATE DATABASE 'any name'
 
 
-CREATE TABLE `db_vehicle`.`table_car` (`id` INT NOT NULL AUTO_INCREMENT , `numb_doors` INT NOT NULL , `trunk_size` DOUBLE NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `db_name`.`table_name` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `numb_doors` INT NOT NULL , 
+    `trunk_size` DOUBLE NOT NULL , 
+    PRIMARY KEY (`id`)) 
+    ENGINE = InnoDB;
+
+INSERT INTO `employees` (`id`, `name`, `date_of_birth`, `role`, `contact`, `email`, `adress`) 
+    VALUES 
+    (NULL, 
+    'Nicholas Nathaniel Franklin', 
+    '2005-12-01', 
+    'Crew members', 
+    '0897 8239 088', 
+    'sample@gmail.com', 
+    'Capitol Terrace, NSW')
+
+UPDATE `employees` SET `email` = 'nichbeworkin@hotmail.com' WHERE `employees`.`id` = 1;
